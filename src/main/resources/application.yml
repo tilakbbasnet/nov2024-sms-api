@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: student-management-system
+  profiles:
+    active: prod
+
+# server.port=9090
+
+# spring.profiles.active=qa
+
+# application.properties -> application.yml
+# application-dev.properties -> application-dev.yml
