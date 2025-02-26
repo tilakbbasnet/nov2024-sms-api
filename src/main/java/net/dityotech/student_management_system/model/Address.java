@@ -43,7 +43,7 @@ public class Address {
         return "Address{" +
                 "state='" + state + '\'' +
                 ", city='" + city + '\'' +
-                ", streetName='" + streetName + '\'' +
+                ", street name='" + streetName + '\'' +
                 '}';
     }
 }

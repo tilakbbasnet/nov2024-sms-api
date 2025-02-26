@@ -12,6 +12,7 @@ public class SearchController {
     @GetMapping
     public String searchResults(@RequestParam("username") String uname,
                                 @RequestParam("password") String password){
+        System.out.println("Searching data....");
         return "Username: "+uname+ "\nPassword: "+password;
     }
 }

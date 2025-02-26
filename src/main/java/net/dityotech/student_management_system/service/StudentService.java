@@ -3,7 +3,6 @@ package net.dityotech.student_management_system.service;
 import net.dityotech.student_management_system.entity.Student;
 import net.dityotech.student_management_system.exception.StudentNotFoundException;
 import net.dityotech.student_management_system.repository.StudentRepository;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,9 +11,6 @@ import java.util.Optional;
 @Service
 public class StudentService {
 
-//    @Autowired
-//    private StudentRepository studentRepository;
-
     private final StudentRepository studentRepository;
 
     public StudentService(StudentRepository studentRepository) {
@@ -22,6 +18,7 @@ public class StudentService {
     }
 
     public List<Student> getAllStudents() {
+        System.out.println("Getting all students...");
         return studentRepository.findAll();
     }
 
